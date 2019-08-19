@@ -16,7 +16,20 @@ function numberChange(a, b) {
     a = a + b;
     b = a - b;
     a = a - b;
-    return a, b;
-
 }
 console.log(numberChange(4, 3));
+
+//fibo numbers
+function fibo(n) {
+    let a = 1;
+    let b = 1;
+    let sum, maxSum;
+    for (let i = 3; i <= n; i++) {
+        sum = a + b;
+        a = b;
+        b = sum;
+        maxSum = sum + b;
+    }
+    return maxSum;
+}
+console.log(fibo(5));
