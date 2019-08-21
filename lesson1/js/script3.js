@@ -1,5 +1,6 @@
 /*eslint-disable no-console */
 //eslint no - console: "error"
+//prototypes
 const firstUser = {
     age: 26
 };
