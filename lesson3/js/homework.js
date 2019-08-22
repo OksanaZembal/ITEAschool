@@ -5,19 +5,19 @@
 function calculator() {
     const intoduce = "Result is: ";
     this.addNum = function(a, b) {
-        const result = a + b;
+        result = a + b;
         return intoduce + result;
     }
     this.multNum = function(a, b) {
-        const result = a * b;
+        result = a * b;
         return intoduce + result;
     }
     this.divNum = function(a, b) {
-        const result = a / b;
+        result = a / b;
         return intoduce + result;
     }
     this.subtractNum = function(a, b) {
-        const result = a - b;
+        result = a - b;
         return intoduce + result;
 
     }
