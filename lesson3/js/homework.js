@@ -1,31 +1,25 @@
 /*eslint-disable no-console */
 //eslint no - console: "error"
-
-
-function calculator() {
-    const intoduce = "Result is: ";
-    this.addNum = function(a, b) {
-        result = a + b;
-        return intoduce + result;
+let fruits = [{
+        name: 'lemon',
+        color: 'yellow'
+    },
+    {
+        name: 'kiwi',
+        color: 'green'
+    },
+    {
+        name: 'cherry',
+        color: 'red'
     }
-    this.multNum = function(a, b) {
-        result = a * b;
-        return intoduce + result;
-    }
-    this.divNum = function(a, b) {
-        result = a / b;
-        return intoduce + result;
-    }
-    this.subtractNum = function(a, b) {
-        result = a - b;
-        return intoduce + result;
+];
 
-    }
-
+function printFruitInfo() {
+    document.write(`Fruit name: ${this.name}, with color: ${this.color}`);
+    document.write('<hr>');
 }
 
-const calcul = new calculator();
-console.log(calcul.addNum(2, 3));
-console.log(calcul.multNum(2, 3));
-console.log(calcul.divNum(6, 3));
-console.log(calcul.subtractNum(6, 3));
+for (let i = 0; i < fruits.length; i++) {
+
+    printFruitInfo.apply(fruits[i], [fruits[i].name, fruits[i].color]);
+}
