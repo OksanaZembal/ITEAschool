@@ -15,5 +15,5 @@ Object.defineProperty(academy, 'addStudent', {
     }
 });
 
-academy.addStudent = "Ivan Shvora";
+academy.addStudent = "Oksana Zembal";
 console.log(academy.students);
